@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ColorOneViewController: UIViewController {
     
@@ -22,6 +23,8 @@ class ColorOneViewController: UIViewController {
     @IBOutlet weak var eraser: UIButton!
     @IBOutlet weak var pictureView: UIImageView!
     @IBOutlet weak var thicknessSlider: UISlider!
+    @IBOutlet weak var muteMusicButton: UIButton!
+    var audioPlayer = AVAudioPlayer()
     
     var lastPoint = CGPoint.zero
     var red = 0.0
@@ -29,6 +32,20 @@ class ColorOneViewController: UIViewController {
     var blue = 0.0
     var continuous = false
     var thickness = 10.0
+    
+    @IBAction func muteMusic(_ sender: Any) {
+        if (audioPlayer.isPlaying)
+        {
+            audioPlayer.pause()
+            muteMusicButton.setTitle("unmute music", for: .normal)
+        }
+        else
+        {
+            audioPlayer.play()
+            muteMusicButton.setTitle("mute music", for: .normal)
+            
+        }
+    }
     
     @IBAction func catButton(_ sender: Any) {
         pictureView.image = UIImage(named: "cat.jpg")
@@ -125,6 +142,15 @@ class ColorOneViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let sound = NSURL(fileURLWithPath: Bundle.main.path(forResource: "happymusic", ofType: "mp3")!)
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: sound as URL)
+            audioPlayer.prepareToPlay()
+        } catch {
+            print("Problem in getting File")
+        }
+        audioPlayer.play()
         self.navigationController?.isNavigationBarHidden = false
 
         // Do any additional setup after loading the view.

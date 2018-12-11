@@ -23,14 +23,32 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTV-2X-HTT">
-                                <rect key="frame" x="75" y="290" width="224" height="86"/>
+                                <rect key="frame" x="47" y="258" width="281" height="107"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="41"/>
-                                <state key="normal" title="go to book!">
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="29"/>
+                                <state key="normal" title="let's get drawing!">
                                     <color key="titleColor" red="1" green="0.41596929249999998" blue="0.41889494820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="cPv-yA-v3V" kind="presentation" id="esf-sQ-kM5"/>
+                                    <segue destination="cPv-yA-v3V" kind="show" id="Lmc-2B-0KS"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="COLORING BOOK!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fAs-lb-pdu">
+                                <rect key="frame" x="16" y="64" width="343" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="67"/>
+                                <color key="textColor" red="0.31832963197969544" green="0.044112351898136525" blue="0.032409077962292643" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q99-kI-PAt">
+                                <rect key="frame" x="111" y="358" width="152" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="28"/>
+                                <state key="normal" title="instructions">
+                                    <color key="titleColor" red="1" green="0.41596929249999998" blue="0.41889494820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="8eI-TV-KHH" kind="show" id="H00-yb-oFj"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -42,6 +60,82 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1408.8" y="40.929535232383813"/>
+        </scene>
+        <!--Instructions View Controller-->
+        <scene sceneID="lrp-qs-qoB">
+            <objects>
+                <viewController id="8eI-TV-KHH" customClass="InstructionsViewController" customModule="ColorByNumbers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QVD-gn-ie4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="paper.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="XL1-EP-ifN">
+                                <rect key="frame" x="0.0" y="64" width="394" height="638"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="click this to toggle music!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WrS-QC-vaB">
+                                <rect key="frame" x="33" y="402" width="131" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.25594699382781982" green="0.11116746813058853" blue="0.047317333519458771" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="slide this to change the brush thickness!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U81-Rh-X8g">
+                                <rect key="frame" x="33" y="309" width="113" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.25594699382781982" green="0.11116746813058853" blue="0.047317333519458771" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="click these to change your image to the one shown, or click the one you're on right now to clear it of drawing!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1pE-kP-4hS">
+                                <rect key="frame" x="33" y="176" width="166" height="117"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.25594699382781982" green="0.11116746813058853" blue="0.047317333519458771" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="click any of these buttons to change your brush color to the one shown!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6B0-fl-b1x">
+                                <rect key="frame" x="33" y="71" width="124" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.24555837563451777" green="0.10302999762344349" blue="0.038471179027662776" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="colors.png" translatesAutoresizingMaskIntoConstraints="NO" id="9eX-lY-hbW">
+                                <rect key="frame" x="227" y="71" width="73" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pictures.png" translatesAutoresizingMaskIntoConstraints="NO" id="YIh-BM-2Jc">
+                                <rect key="frame" x="230" y="177" width="70" height="114"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="brushthickness.png" translatesAutoresizingMaskIntoConstraints="NO" id="srh-Eg-zO7">
+                                <rect key="frame" x="187" y="323" width="157" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mutemusic.png" translatesAutoresizingMaskIntoConstraints="NO" id="54N-7g-RiE">
+                                <rect key="frame" x="200" y="413" width="131" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="share.png" translatesAutoresizingMaskIntoConstraints="NO" id="9P9-SZ-Swd">
+                                <rect key="frame" x="181" y="486" width="168" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="click this to open share menu!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QvU-QG-Gqo">
+                                <rect key="frame" x="33" y="482" width="113" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.2594769299030304" green="0.11168146878480911" blue="0.048087500035762787" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="9lh-Bm-bKJ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wHw-Bu-VSw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1460" y="757.87106446776613"/>
         </scene>
         <!--Color One View Controller-->
         <scene sceneID="y4e-ZN-aXg">
@@ -196,7 +290,7 @@
                                 </connections>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="25" minValue="0.0" maxValue="35" translatesAutoresizingMaskIntoConstraints="NO" id="zns-Ml-ceQ">
-                                <rect key="frame" x="151" y="539" width="118" height="30"/>
+                                <rect key="frame" x="151" y="525" width="118" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.15654209727486174" green="0.1501603557372671" blue="0.15730092002233509" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
@@ -204,7 +298,7 @@
                                 </connections>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wtc-7O-LTF">
-                                <rect key="frame" x="118" y="607" width="184" height="40"/>
+                                <rect key="frame" x="122" y="614" width="184" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="20"/>
                                 <state key="normal" title="share your drawing!">
@@ -215,15 +309,26 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="brush thickness" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zz8-P3-0Fj">
-                                <rect key="frame" x="149" y="573" width="122" height="21"/>
+                                <rect key="frame" x="153" y="557" width="122" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.58583835660000005" green="0.15822709560000001" blue="0.37399602679999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S6Z-Dj-Tji">
+                                <rect key="frame" x="140" y="586" width="149" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="18"/>
+                                <state key="normal" title="mute music">
+                                    <color key="titleColor" red="0.31832963199999997" green="0.044112351899999999" blue="0.032409077959999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="muteMusic:" destination="cPv-yA-v3V" eventType="touchUpInside" id="aSg-20-yrQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.94192845541998527" green="0.92853518588531847" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="tintColor" red="0.58583835660000005" green="0.15822709560000001" blue="0.37399602679999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.58199424249999998" green="0.074054721980000002" blue="0.60043226520000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="G9e-QK-qUp"/>
                     </view>
                     <connections>
@@ -233,6 +338,7 @@
                         <outlet property="blueButton" destination="TNp-JV-xPT" id="onk-nh-q8j"/>
                         <outlet property="eraser" destination="WKJ-nB-a80" id="ipH-ud-OZJ"/>
                         <outlet property="greenButton" destination="hVP-3a-UD0" id="khC-yS-4br"/>
+                        <outlet property="muteMusicButton" destination="S6Z-Dj-Tji" id="Ukg-sf-TOJ"/>
                         <outlet property="orangeButton" destination="LsC-xp-uHE" id="9Wu-uV-7F3"/>
                         <outlet property="pictureView" destination="eaH-vf-lxy" id="h4W-b7-2I1"/>
                         <outlet property="redButton" destination="6Nt-uu-plA" id="FIz-zC-zyk"/>
@@ -248,7 +354,6 @@
         <!--Navigation Controller-->
         <scene sceneID="TrQ-wn-fBF">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uME-OI-5ME" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2Nv-x2-B7b" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MFt-dK-vCb">
@@ -261,6 +366,7 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="C1M-Aj-HhS"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uME-OI-5ME" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="469.60000000000002" y="40.929535232383813"/>
         </scene>
@@ -268,16 +374,21 @@
     <resources>
         <image name="black.png" width="300" height="300"/>
         <image name="blue.jpg" width="768" height="708"/>
+        <image name="brushthickness.png" width="194" height="72"/>
         <image name="cat.jpg" width="590" height="800"/>
+        <image name="colors.png" width="137" height="173"/>
         <image name="darkbrown.jpg" width="500" height="500"/>
         <image name="eraser.jpg" width="780" height="750"/>
         <image name="green.jpg" width="750" height="750"/>
         <image name="grey.jpg" width="450" height="450"/>
         <image name="lightbrown.png" width="280" height="280"/>
+        <image name="mutemusic.png" width="162" height="38"/>
         <image name="orange.jpg" width="1500" height="1500"/>
         <image name="paper.jpg" width="1200" height="1200"/>
+        <image name="pictures.png" width="76" height="180"/>
         <image name="pink.jpg" width="600" height="601"/>
         <image name="red.jpg" width="700" height="629"/>
+        <image name="share.png" width="261" height="44"/>
         <image name="violet.jpg" width="1920" height="1080"/>
         <image name="yellow.jpg" width="2048" height="2048"/>
     </resources>
