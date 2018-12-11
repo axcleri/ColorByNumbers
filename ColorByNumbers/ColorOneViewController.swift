@@ -48,7 +48,23 @@ class ColorOneViewController: UIViewController {
     }
     
     @IBAction func catButton(_ sender: Any) {
-        pictureView.image = UIImage(named: "cat.jpg")
+        if pictureView.image == UIImage(named: "cat.jpg")
+            {
+            let alert = UIAlertController(title: "Are you sure you want to clear?", message: nil, preferredStyle: .alert)
+            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+            alert.addAction(cancelAction)
+            let understandAction = UIAlertAction(title: "OK", style: .default, handler: {action in
+            print("The user understands their grave situation.")
+            })
+            alert.addAction(understandAction)
+            
+            self.present(alert, animated: true, completion: nil)
+            }
+        else
+        {
+            pictureView.image = UIImage(named: "cat.jpg")
+        }
+        
     }
     
     @IBAction func kittenButton(_ sender: Any) {
@@ -64,15 +80,15 @@ class ColorOneViewController: UIViewController {
     }
     
     @IBAction func redButtonPressed(_ sender: Any) {
-        red = 255.0
+        red = 1.0
         green = 0.0
         blue = 0.0
     }
     @IBAction func orangeButtonPressed(_ sender: Any)
     {
-        red = 226.0
-        green = 142.0
-        blue = 78.0
+        red = 225.0/255.0
+        green = 142.0/255.0
+        blue = 78.0/255.0
     }
     @IBAction func blackButtonPressed(_ sender: Any)
     {
@@ -82,57 +98,57 @@ class ColorOneViewController: UIViewController {
     }
     @IBAction func yellowButtonPressed(_ sender: Any)
     {
-        red = 255.0
-        green = 255.0
-        blue = 51.0
+        red = 1.0
+        green = 1.0
+        blue = 51.0/255.0
     }
     @IBAction func greyButtonPressed(_ sender: Any)
     {
-        red = 192.0
-        green = 192.0
-        blue = 192.0
+        red = 192.0/255.0
+        green = 192.0/255.0
+        blue = 192.0/255.0
     }
     @IBAction func greenButtonPressed(_ sender: Any)
     {
-        red = 51.0
-        green = 149.0
-        blue = 47.0
+        red = 51.0/255.0
+        green = 149.0/255.0
+        blue = 47.0/255.0
     }
     @IBAction func blueButtonPressed(_ sender: Any)
     {
         red = 0.0
         green = 0.0
-        blue = 255.0
+        blue = 1.0
     }
     @IBAction func violetButtonPressed(_ sender: Any)
     {
-        red = 167.0
-        green = 133.0
-        blue = 192.0
+        red = 167.0/255.0
+        green = 133.0/255.0
+        blue = 192.0/255.0
     }
     @IBAction func pinkButtonPressed(_ sender: Any)
     {
-        red = 255.0
-        green = 204.0
-        blue = 229.0
+        red = 1.0
+        green = 204.0/255.0
+        blue = 229.0/255.0
     }
     @IBAction func LBrownButtonPressed(_ sender: Any)
     {
-        red = 146.0
-        green = 116.0
-        blue = 93.0
+        red = 146.0/255.0
+        green = 116.0/255.0
+        blue = 93.0/255.0
     }
     @IBAction func DBrownButtonPressed(_ sender: Any)
     {
-        red = 51.0
-        green = 25.0
+        red = 51.0/255.0
+        green = 25.0/255.0
         blue = 0.0
     }
     @IBAction func eraserButtonPressed(_ sender: Any)
     {
-        red = 255.0
-        blue = 255.0
-        green = 255.0
+        red = 1.0
+        blue = 1.0
+        green = 1.0
     }
     
     @IBAction func thicknessSlider(_ sender: Any) {
