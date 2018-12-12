@@ -264,7 +264,7 @@
                                     <color key="titleColor" red="0.25031927227973938" green="0.13190004229545593" blue="0.30503600835800171" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="kittenButton:" destination="cPv-yA-v3V" eventType="touchUpInside" id="cHG-gx-9dc"/>
+                                    <action selector="blankButton:" destination="cPv-yA-v3V" eventType="touchUpInside" id="Dvw-P5-0fB"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wf7-F4-k8n">
@@ -326,6 +326,10 @@
                                     <action selector="muteMusic:" destination="cPv-yA-v3V" eventType="touchUpInside" id="aSg-20-yrQ"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cattrans.png" translatesAutoresizingMaskIntoConstraints="NO" id="ldS-vo-U2g">
+                                <rect key="frame" x="0.0" y="64" width="375" height="456"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.94192845541998527" green="0.92853518588531847" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.58199424249999998" green="0.074054721980000002" blue="0.60043226520000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -341,6 +345,7 @@
                         <outlet property="muteMusicButton" destination="S6Z-Dj-Tji" id="Ukg-sf-TOJ"/>
                         <outlet property="orangeButton" destination="LsC-xp-uHE" id="9Wu-uV-7F3"/>
                         <outlet property="pictureView" destination="eaH-vf-lxy" id="h4W-b7-2I1"/>
+                        <outlet property="pictureViewTwo" destination="ldS-vo-U2g" id="sDD-Y9-Whx"/>
                         <outlet property="redButton" destination="6Nt-uu-plA" id="FIz-zC-zyk"/>
                         <outlet property="thicknessSlider" destination="zns-Ml-ceQ" id="1fo-3b-pcl"/>
                         <outlet property="violetButton" destination="ZHq-am-8SB" id="rEe-nl-VVA"/>
@@ -376,6 +381,7 @@
         <image name="blue.jpg" width="768" height="708"/>
         <image name="brushthickness.png" width="194" height="72"/>
         <image name="cat.jpg" width="590" height="800"/>
+        <image name="cattrans.png" width="222" height="301"/>
         <image name="colors.png" width="137" height="173"/>
         <image name="darkbrown.jpg" width="500" height="500"/>
         <image name="eraser.jpg" width="780" height="750"/>
