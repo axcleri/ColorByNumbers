@@ -13,7 +13,6 @@ class InstructionsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.isNavigationBarHidden = false
-        self.navigationController?.navigationBar.topItem?.title = "Instructions"
 
         // Do any additional setup after loading the view.
     }

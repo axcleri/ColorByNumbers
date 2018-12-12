@@ -35,6 +35,7 @@ class ColorOneViewController: UIViewController {
     var blue = 0.0
     var continuous = false
     var thickness = 10.0
+    var pictureNumber = 0
     
     //toggles music player
     @IBAction func muteMusic(_ sender: Any) {
@@ -51,16 +52,20 @@ class ColorOneViewController: UIViewController {
         }
     }
     
+    //makes navigation bar reappear
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+    
     //changes picture to cat
     @IBAction func catButton(_ sender: Any) {
-        if pictureViewTwo.image == UIImage(named: "cattrans.png")
+        if (pictureNumber == 0)
             {
             let alert = UIAlertController(title: "Are you sure you want to clear?", message: nil, preferredStyle: .alert)
             let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
             alert.addAction(cancelAction)
-            let understandAction = UIAlertAction(title: "OK", style: .default, handler: {action in
-            print("The user understands their grave situation.")
-            })
+            let understandAction = UIAlertAction(title: "OK", style: .default, handler: clear)
             alert.addAction(understandAction)
             
             self.present(alert, animated: true, completion: nil)
@@ -69,27 +74,40 @@ class ColorOneViewController: UIViewController {
         {
             pictureView.image = UIImage(named: "cat.jpg")
             pictureViewTwo.image = UIImage(named: "cattrans.png")
+            pictureNumber = 0
         }
         
     }
     
     //changes picture to blank
     @IBAction func blankButton(_ sender: Any) {
-        pictureView.image = UIImage(named: "white.jpg")
-        pictureViewTwo.image = UIImage(named: "transparentwork.jpg")
+        if (pictureNumber == 3)
+        {
+            let alert = UIAlertController(title: "Are you sure you want to clear?", message: nil, preferredStyle: .alert)
+            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+            alert.addAction(cancelAction)
+            let understandAction = UIAlertAction(title: "OK", style: .default, handler: clear)
+            alert.addAction(understandAction)
+            
+            self.present(alert, animated: true, completion: nil)
+        }
+        else
+        {
+            pictureView.image = UIImage(named: "white.jpg")
+            pictureViewTwo.image = UIImage(named: "transparentwork.jpg")
+            pictureNumber = 3
+        }
     }
     
     
     //changes picture to puppy
     @IBAction func puppyButton(_ sender: Any) {
-        if pictureViewTwo.image == UIImage(named: "puppytrans.png")
+        if (pictureNumber == 1)
         {
             let alert = UIAlertController(title: "Are you sure you want to clear?", message: nil, preferredStyle: .alert)
             let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
             alert.addAction(cancelAction)
-            let understandAction = UIAlertAction(title: "OK", style: .default, handler: {action in
-                print("The user understands their grave situation.")
-            })
+            let understandAction = UIAlertAction(title: "OK", style: .default, handler: clear)
             alert.addAction(understandAction)
             
             self.present(alert, animated: true, completion: nil)
@@ -98,19 +116,18 @@ class ColorOneViewController: UIViewController {
         {
             pictureView.image = UIImage(named: "puppy.jpg")
             pictureViewTwo.image = UIImage(named: "puppytrans.png")
+            pictureNumber = 1
         }
     }
     
     //changes picture to girl
     @IBAction func girlButton(_ sender: Any) {
-        if pictureViewTwo.image == UIImage(named: "girltrans.png")
+        if (pictureNumber == 2)
         {
             let alert = UIAlertController(title: "Are you sure you want to clear?", message: nil, preferredStyle: .alert)
             let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
             alert.addAction(cancelAction)
-            let understandAction = UIAlertAction(title: "OK", style: .default, handler: {action in
-                print("The user understands their grave situation.")
-            })
+            let understandAction = UIAlertAction(title: "OK", style: .default, handler: clear)
             alert.addAction(understandAction)
             
             self.present(alert, animated: true, completion: nil)
@@ -119,6 +136,31 @@ class ColorOneViewController: UIViewController {
         {
             pictureView.image = UIImage(named: "girl.jpg")
             pictureViewTwo.image = UIImage(named: "girltrans.png")
+            pictureNumber = 2
+        }
+    }
+    
+    func clear(action: UIAlertAction) {
+        if (pictureNumber == 0)
+        {
+            pictureView.image = UIImage(named: "cat.jpg")
+            pictureViewTwo.image = UIImage(named: "cattrans.png")
+        }
+        else if (pictureNumber == 1)
+        {
+            pictureView.image = UIImage(named: "puppy.jpg")
+            pictureViewTwo.image = UIImage(named: "puppytrans.png")
+            
+        }
+        else if (pictureNumber == 2)
+        {
+            pictureView.image = UIImage(named: "girl.jpg")
+            pictureViewTwo.image = UIImage(named: "girltrans.png")
+        }
+        else if (pictureNumber == 3)
+        {
+            pictureView.image = UIImage(named: "white.jpg")
+            pictureViewTwo.image = UIImage(named: "transparentwork.jpg")
         }
     }
     

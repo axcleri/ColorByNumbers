@@ -35,6 +35,7 @@
 		5190F00621C09A170061A7FC /* girltrans.png in Resources */ = {isa = PBXBuildFile; fileRef = 5190F00421C09A170061A7FC /* girltrans.png */; };
 		5190F00821C09E9F0061A7FC /* white.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5190F00721C09E9E0061A7FC /* white.jpg */; };
 		5190F00C21C0A0170061A7FC /* transparentwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 5190F00B21C0A0160061A7FC /* transparentwork.png */; };
+		5190F00E21C0BE4D0061A7FC /* othercat.png in Resources */ = {isa = PBXBuildFile; fileRef = 5190F00D21C0BE4D0061A7FC /* othercat.png */; };
 		519ED99921C0544100BDC0EC /* happymusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 519ED99821C0544000BDC0EC /* happymusic.mp3 */; };
 		519ED99B21C05A6000BDC0EC /* pictures.png in Resources */ = {isa = PBXBuildFile; fileRef = 519ED99A21C05A6000BDC0EC /* pictures.png */; };
 		519ED9A021C05A7100BDC0EC /* share.png in Resources */ = {isa = PBXBuildFile; fileRef = 519ED99C21C05A6F00BDC0EC /* share.png */; };
@@ -75,6 +76,7 @@
 		5190F00421C09A170061A7FC /* girltrans.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = girltrans.png; sourceTree = "<group>"; };
 		5190F00721C09E9E0061A7FC /* white.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = white.jpg; sourceTree = "<group>"; };
 		5190F00B21C0A0160061A7FC /* transparentwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = transparentwork.png; sourceTree = "<group>"; };
+		5190F00D21C0BE4D0061A7FC /* othercat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = othercat.png; sourceTree = "<group>"; };
 		519ED99821C0544000BDC0EC /* happymusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = happymusic.mp3; sourceTree = "<group>"; };
 		519ED99A21C05A6000BDC0EC /* pictures.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pictures.png; sourceTree = "<group>"; };
 		519ED99C21C05A6F00BDC0EC /* share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = share.png; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				518A2B9421C02B21008D091A /* girl.jpg */,
 				5190F00121C09A080061A7FC /* puppytrans.png */,
 				5190F00321C09A160061A7FC /* cattrans.png */,
+				5190F00D21C0BE4D0061A7FC /* othercat.png */,
 				5190F00B21C0A0160061A7FC /* transparentwork.png */,
 				5190F00421C09A170061A7FC /* girltrans.png */,
 				5121A53421BDC48D00683674 /* orange.jpg */,
@@ -235,6 +238,7 @@
 				5121A54721BDC48F00683674 /* yellow.jpg in Resources */,
 				519ED9A121C05A7100BDC0EC /* colors.png in Resources */,
 				5121A53321BDC1FE00683674 /* cat.jpg in Resources */,
+				5190F00E21C0BE4D0061A7FC /* othercat.png in Resources */,
 				518A2B9121C02947008D091A /* catcoloring.jpeg in Resources */,
 				5121A54421BDC48F00683674 /* blue.jpg in Resources */,
 				5121A52421BDBD6A00683674 /* Main.storyboard in Resources */,
