@@ -26,8 +26,8 @@
                                 <rect key="frame" x="47" y="258" width="281" height="107"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="29"/>
-                                <state key="normal" title="let's get drawing!">
-                                    <color key="titleColor" red="1" green="0.41596929249999998" blue="0.41889494820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="let's start drawing!">
+                                    <color key="titleColor" red="0.68055996192893398" green="0.28684618940970591" blue="0.29321793453777406" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="cPv-yA-v3V" kind="show" id="Lmc-2B-0KS"/>
@@ -45,7 +45,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="28"/>
                                 <state key="normal" title="instructions">
-                                    <color key="titleColor" red="1" green="0.41596929249999998" blue="0.41889494820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.68689244985580444" green="0.30278003215789795" blue="0.30885559320449829" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="8eI-TV-KHH" kind="show" id="H00-yb-oFj"/>
@@ -135,7 +135,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wHw-Bu-VSw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1460" y="757.87106446776613"/>
+            <point key="canvasLocation" x="1466" y="881"/>
         </scene>
         <!--Color One View Controller-->
         <scene sceneID="y4e-ZN-aXg">

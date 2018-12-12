@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    //makes navigation bar disappear
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: false)
@@ -19,7 +20,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
        
     }
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
 
