@@ -36,6 +36,10 @@
 		5190F00821C09E9F0061A7FC /* white.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5190F00721C09E9E0061A7FC /* white.jpg */; };
 		5190F00C21C0A0170061A7FC /* transparentwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 5190F00B21C0A0160061A7FC /* transparentwork.png */; };
 		5190F00E21C0BE4D0061A7FC /* othercat.png in Resources */ = {isa = PBXBuildFile; fileRef = 5190F00D21C0BE4D0061A7FC /* othercat.png */; };
+		5190F01021C0C9780061A7FC /* lightpink.png in Resources */ = {isa = PBXBuildFile; fileRef = 5190F00F21C0C9780061A7FC /* lightpink.png */; };
+		5190F01221C0C9980061A7FC /* colorwheel.png in Resources */ = {isa = PBXBuildFile; fileRef = 5190F01121C0C9970061A7FC /* colorwheel.png */; };
+		5190F01421C0CA2B0061A7FC /* colorwheel2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5190F01321C0CA2B0061A7FC /* colorwheel2.png */; };
+		5190F01621C0CB080061A7FC /* colorwheeltwo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5190F01521C0CB080061A7FC /* colorwheeltwo.png */; };
 		519ED99921C0544100BDC0EC /* happymusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 519ED99821C0544000BDC0EC /* happymusic.mp3 */; };
 		519ED99B21C05A6000BDC0EC /* pictures.png in Resources */ = {isa = PBXBuildFile; fileRef = 519ED99A21C05A6000BDC0EC /* pictures.png */; };
 		519ED9A021C05A7100BDC0EC /* share.png in Resources */ = {isa = PBXBuildFile; fileRef = 519ED99C21C05A6F00BDC0EC /* share.png */; };
@@ -77,6 +81,10 @@
 		5190F00721C09E9E0061A7FC /* white.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = white.jpg; sourceTree = "<group>"; };
 		5190F00B21C0A0160061A7FC /* transparentwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = transparentwork.png; sourceTree = "<group>"; };
 		5190F00D21C0BE4D0061A7FC /* othercat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = othercat.png; sourceTree = "<group>"; };
+		5190F00F21C0C9780061A7FC /* lightpink.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightpink.png; sourceTree = "<group>"; };
+		5190F01121C0C9970061A7FC /* colorwheel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colorwheel.png; sourceTree = "<group>"; };
+		5190F01321C0CA2B0061A7FC /* colorwheel2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colorwheel2.png; sourceTree = "<group>"; };
+		5190F01521C0CB080061A7FC /* colorwheeltwo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colorwheeltwo.png; sourceTree = "<group>"; };
 		519ED99821C0544000BDC0EC /* happymusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = happymusic.mp3; sourceTree = "<group>"; };
 		519ED99A21C05A6000BDC0EC /* pictures.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pictures.png; sourceTree = "<group>"; };
 		519ED99C21C05A6F00BDC0EC /* share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = share.png; sourceTree = "<group>"; };
@@ -127,12 +135,16 @@
 				5121A53221BDC1FE00683674 /* cat.jpg */,
 				518A2B9021C02946008D091A /* catcoloring.jpeg */,
 				518A2B9221C02A94008D091A /* puppy.jpg */,
+				5190F01121C0C9970061A7FC /* colorwheel.png */,
+				5190F01321C0CA2B0061A7FC /* colorwheel2.png */,
+				5190F01521C0CB080061A7FC /* colorwheeltwo.png */,
 				518A2B9421C02B21008D091A /* girl.jpg */,
 				5190F00121C09A080061A7FC /* puppytrans.png */,
 				5190F00321C09A160061A7FC /* cattrans.png */,
 				5190F00D21C0BE4D0061A7FC /* othercat.png */,
 				5190F00B21C0A0160061A7FC /* transparentwork.png */,
 				5190F00421C09A170061A7FC /* girltrans.png */,
+				5190F00F21C0C9780061A7FC /* lightpink.png */,
 				5121A53421BDC48D00683674 /* orange.jpg */,
 				5121A53521BDC48D00683674 /* green.jpg */,
 				5121A53C21BDC48F00683674 /* lightbrown.png */,
@@ -225,8 +237,12 @@
 				5121A52621BDBD6D00683674 /* Assets.xcassets in Resources */,
 				5121A53F21BDC48F00683674 /* green.jpg in Resources */,
 				5121A54521BDC48F00683674 /* black.png in Resources */,
+				5190F01621C0CB080061A7FC /* colorwheeltwo.png in Resources */,
 				5121A53E21BDC48F00683674 /* orange.jpg in Resources */,
 				518A2B9521C02B21008D091A /* girl.jpg in Resources */,
+				5190F01421C0CA2B0061A7FC /* colorwheel2.png in Resources */,
+				5190F01021C0C9780061A7FC /* lightpink.png in Resources */,
+				5190F01221C0C9980061A7FC /* colorwheel.png in Resources */,
 				5121A54221BDC48F00683674 /* red.jpg in Resources */,
 				519ED99921C0544100BDC0EC /* happymusic.mp3 in Resources */,
 				519ED9A221C05A7100BDC0EC /* brushthickness.png in Resources */,
